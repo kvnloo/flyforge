@@ -1,0 +1,27 @@
+version: 1
+repo: kvnloo/flyforge
+id: flyforge
+kind: suite
+summary: Reference research-program shell preserving the original FlyForge framing while implementation ownership has moved to Evolution Lab, frontier-kb, Verified OSS Loop, and AODL.
+
+architecture:
+  subsystems:
+    - id: research-program-reference
+      name: Research program reference
+      kind: research
+      summary: Preserves the north-star research framing and routes active work to the repositories that now own execution, evidence, contribution protocol, and orchestration contracts.
+      paths: [README.md]
+
+  provides_interfaces: []
+  consumes_interfaces: []
+  produces_representations: []
+  consumes_representations: []
+
+  boundaries:
+    owns: [historical research-program framing and repository routing]
+    not_here: [experiment engine, research evidence authority, contribution protocol, AODL implementation]
+
+  evidence:
+    docs: [README.md]
+    tests: []
+    schemas: []
